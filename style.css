@@ -1,0 +1,122 @@
+/* Modern CSS for Loteria - Mega Da Virada */
+
+:root {
+  --primary: #1e88e5;
+  --secondary: #43a047;
+  --accent: #ffd600;
+  --background: #f5f7fa;
+  --surface: #fff;
+  --text: #222;
+  --border-radius: 1.2rem;
+  --shadow: 0 4px 24px rgba(30,136,229,0.08);
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 4rem;
+}
+
+h1, h2 {
+  color: var(--primary);
+  margin-bottom: 0.5em;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: var(--surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 2.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  background: var(--background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(67,160,71,0.07);
+}
+
+fieldset {
+  border: none;
+  flex: 1 1 180px;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+input[type="number"] {
+  padding: 0.7em 1em;
+  border: 1px solid #cfd8dc;
+  border-radius: 0.7em;
+  font-size: 1.1em;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+input[type="number"]:focus {
+  border: 1.5px solid var(--primary);
+  outline: none;
+}
+
+button[type="submit"] {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #fff;
+  border: none;
+  border-radius: 2em;
+  padding: 0.9em 2.2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.2em;
+  box-shadow: 0 2px 8px rgba(30,136,229,0.10);
+  transition: background 0.2s, transform 0.1s;
+}
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  transform: translateY(-2px) scale(1.03);
+}
+
+#results-container {
+  margin-top: 1.5em;
+  background: #f1f8e9;
+  border-radius: var(--border-radius);
+  padding: 1.2em;
+  box-shadow: 0 1px 4px rgba(67,160,71,0.08);
+}
+
+.check-result {
+  margin-top: 1.2em;
+  font-size: 1.15em;
+  font-weight: 500;
+  color: var(--accent);
+  text-shadow: 0 1px 2px #fffde7;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 1.2rem 0.5rem;
+  }
+  form {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}

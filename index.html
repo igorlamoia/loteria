@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Bolão da HBI</h2>
+    <main>
+      <section className="check-section">
+        <h2>Verificar Jogo</h2>
+        <form id="check-form">
+          <fieldset>
+            <label for="first">Insira o 1º número:</label>
+            <input
+            required
+              type="number"
+              id="first"
+              name="first"
+              placeholder="Ex: 7"
+            />
+          </fieldset>
+          <fieldset>
+
+            <label for="second">Insira o 2º número:</label>
+            <input
+            required
+              type="number"
+              id="second"
+              name="second"
+              placeholder="Ex: 14"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="third">Insira o 3º número:</label>
+            <input
+            required
+              type="number"
+              id="third"
+              name="third"
+            placeholder="Ex: 23"
+          />
+          </fieldset>
+          <fieldset>
+            <label for="fourth">Insira o 4º número:</label>
+            <input
+            required
+              type="number"
+              id="fourth"
+              name="fourth"
+              placeholder="Ex: 32"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="fifth">Insira o 5º número:</label>
+          <input
+          required
+            type="number"
+            id="fifth"
+            name="fifth"
+            placeholder="Ex: 45"
+          />
+          </fieldset>
+          <fieldset>
+            <label for="sixth">Insira o 6º número:</label>
+            <input
+            required
+              type="number"
+              id="sixth"
+            name="sixth"
+            placeholder="Ex: 56"
+          />
+          </fieldset>
+          <button type="submit">Verificar</button>
+        </form>
+        <div className="check-result"></div>
+      </section>
+      <section className="results-section">
+        <h2>Resultados</h2>
+        <p>Confira os resultados dos jogos da Mega Da Virada abaixo:</p>
+        <div id="results-container"></div>
+      </section>
+    </main>
+  </body>
+    <script src="./index.js"></script>
+
+</html>
